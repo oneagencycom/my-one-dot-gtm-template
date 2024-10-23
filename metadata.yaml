@@ -2,5 +2,5 @@ homepage: "https://www.myonedash.com"
 documentation: "https://github.com/oneagencycom/my-one-dot-gtm-template/blob/main/README.md"
 versions:
   # Latest version
-  - sha: 5f02a788b90ae804f86b04aa24af8937e567874a
+  - sha: c7e95d57ef3a2e3981b9082b1321a4d35de60e3a
     changeNotes: Initial release.
