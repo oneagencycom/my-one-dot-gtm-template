@@ -1,19 +1,11 @@
-﻿___TERMS_OF_SERVICE___
-
-By creating or modifying this file you agree to Google Tag Manager's Community
-Template Gallery Developer Terms of Service available at
-https://developers.google.com/tag-manager/gallery-tos (or such other URL as
-Google may provide), as modified from time to time.
-
-
-___INFO___
+﻿___INFO___
 
 {
   "type": "TAG",
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "My ONE Dot",
+  "displayName": "My ONE Dot \u003e Initialize Dot",
   "categories": [
     "ATTRIBUTION",
     "ADVERTISING",
@@ -65,21 +57,29 @@ ___TEMPLATE_PARAMETERS___
         "value": "InitiateCheckout",
         "displayValue": "Initiate Checkout"
       },
+            {
+        "value": "Purchase",
+        "displayValue": "Purchase"
+      },
+      {
+        "value": "ViewContent",
+        "displayValue": "View Content"
+      },
       {
         "value": "CompleteRegistration",
         "displayValue": "Complete Registration"
       },
       {
         "value": "AddPaymentInfo",
-        "displayValue": "Add payment info"
+        "displayValue": "Add Payment Info"
       },
       {
         "value": "AddToCart",
         "displayValue": "Add To Cart"
       },
       {
-        "value": "Add To Wishlist",
-        "displayValue": "AddToWishlist"
+        "value": "AddToWishlist",
+        "displayValue": "Add To Wishlist"
       },
       {
         "value": "Contact",
@@ -94,12 +94,8 @@ ___TEMPLATE_PARAMETERS___
         "displayValue": "Donate"
       },
       {
-        "value": "Find Location",
-        "displayValue": "FindLocation"
-      },
-      {
-        "value": "Purchase",
-        "displayValue": "Purchase"
+        "value": "FindLocation",
+        "displayValue": "Find Location"
       },
       {
         "value": "Schedule",
@@ -114,16 +110,12 @@ ___TEMPLATE_PARAMETERS___
         "displayValue": "Start Trial"
       },
       {
-        "value": "Submit Application",
-        "displayValue": "SubmitApplication"
+        "value": "SubmitApplication",
+        "displayValue": "Submit Application"
       },
       {
         "value": "Subscribe",
         "displayValue": "Subscribe"
-      },
-      {
-        "value": "ViewContent",
-        "displayValue": "View Content"
       },
       {
         "value": "Custom",
@@ -226,21 +218,29 @@ ___TEMPLATE_PARAMETERS___
                 "value": "InitiateCheckout",
                 "displayValue": "Initiate Checkout"
               },
+                    {
+                "value": "Purchase",
+                "displayValue": "Purchase"
+              },
+              {
+                "value": "ViewContent",
+                "displayValue": "View Content"
+              },
               {
                 "value": "CompleteRegistration",
                 "displayValue": "Complete Registration"
               },
               {
                 "value": "AddPaymentInfo",
-                "displayValue": "Add payment info"
+                "displayValue": "Add Payment Info"
               },
               {
                 "value": "AddToCart",
                 "displayValue": "Add To Cart"
               },
               {
-                "value": "Add To Wishlist",
-                "displayValue": "AddToWishlist"
+                "value": "AddToWishlist",
+                "displayValue": "Add To Wishlist"
               },
               {
                 "value": "Contact",
@@ -255,12 +255,8 @@ ___TEMPLATE_PARAMETERS___
                 "displayValue": "Donate"
               },
               {
-                "value": "Find Location",
-                "displayValue": "FindLocation"
-              },
-              {
-                "value": "Purchase",
-                "displayValue": "Purchase"
+                "value": "FindLocation",
+                "displayValue": "Find Location"
               },
               {
                 "value": "Schedule",
@@ -275,16 +271,12 @@ ___TEMPLATE_PARAMETERS___
                 "displayValue": "Start Trial"
               },
               {
-                "value": "Submit Application",
-                "displayValue": "SubmitApplication"
+                "value": "SubmitApplication",
+                "displayValue": "Submit Application"
               },
               {
                 "value": "Subscribe",
                 "displayValue": "Subscribe"
-              },
-              {
-                "value": "ViewContent",
-                "displayValue": "View Content"
               },
               {
                 "value": "Custom",
@@ -413,7 +405,7 @@ if(data.deployMetaPixel == true){
 //
 const pageUrl = getUrl();
 const pageReferrer = getReferrerUrl();
-const eventData = data.eventData ? makeTableMap(data.eventData, 'name', 'value') : {};
+const eventData = data.eventDataProperties ? makeTableMap(data.eventDataProperties, 'name', 'value') : {};
 const command = data.eventName !== 'Custom' ? 'trackSingle' : 'trackSingleCustom';
 const eventName = data.eventName !== 'Custom' ? data.eventName : data.customEventName;
 //
@@ -475,6 +467,10 @@ ___WEB_PERMISSIONS___
               {
                 "type": 1,
                 "string": "https://myonedot.co/ingest/events/web2*"
+              },
+              {
+                "type": 1,
+                "string": "https://myonedot.co/js-loader/dot*"
               }
             ]
           }
