@@ -2,9 +2,11 @@ homepage: "https://www.myonedash.com"
 documentation: "https://github.com/oneagencycom/my-one-dot-gtm-template/blob/main/README.md"
 versions:
   # Latest version
+  - sha: 1dadd2c6bba97897e70f1a55abc894af6bd7e0ef
+    changeNotes: Standard Events Dropdown Re Organized, fixed javascript issue with custom eventData payload.
+  # Old versions
   - sha: 514f05af733eace9fd73df82430ad90ba47ef249
     changeNotes: Added Meta Support.
-  # Old versions
   - sha: 770703b84a49e7b98ab0cb21fe18a458af28fd96
     changeNotes: Changed Brand ID.
   - sha: c7e95d57ef3a2e3981b9082b1321a4d35de60e3a
