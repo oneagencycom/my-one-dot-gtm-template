@@ -1,0 +1,4 @@
+# Global Code Owners 
+*   @yamilrevilla @esdrasherrera
+# Protect CODEOWNERS
+/.github/CODEOWNERS @yamilrevilla @esdrasherrera
